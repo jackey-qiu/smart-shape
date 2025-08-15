@@ -9,6 +9,10 @@ As you can see, this view is composed of many composite object, which contains n
 
 The real powerful thing in the shape viewer is that each shape is clickable and the style will change once the cursor is on the shape. The action of mouseclick can be specified as callback functions. The motivation of this project is driven by the need of a centralized monitor with pitorial style for monitoring a synchrotron beamline status. Like the example drawing shown above, it is a viewer monitoring our equipments on one shared-optics table. Each component is connected to a device model for live state updating. The communication protocal is through taurus and blissclient. 
 
+A simple view of the logic flow of smart-shape is as follows:
+
+![logic flow chart!](.//assets//imgs//logic_flow.png 'logic flowchart')
+
 # Installation guide
 1. install pdm Python package and dependency manager following [pdm installation](https://pdm-project.org/en/latest/#installation).
 2. clone this project to your local pc using: `git clone https://github.com/jackey-qiu/smart-shape.git`.
