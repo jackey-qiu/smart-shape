@@ -1,0 +1,21 @@
+[project]
+name = "smart-shape"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Canrong(Jackey) Qiu", email = "canrong.qiu@desy.de"},
+]
+dependencies = ["pyqt5>=5.15.11", "pyqtgraph>=0.13.7", "pyqt5-qt5==5.15.2", "taurus<=5.1.8", "blissclient>=1.2.1", "taurus-bliss @ git+https://gitlab.esrf.fr/ui/taurus-bliss.git", "QDarkStyle>=3.2.3", "click>=8.2.1", "pyyaml>=6.0.2", "setuptools>=80.9.0", "numpy==1.26.4", "magicgui>=0.10.1", "lxml>=6.0.0", "taurus-pyqtgraph>=0.9.7", "louie>=2.0.1"]
+requires-python = "==3.10.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+[tool.pdm]
+distribution = true
+
+[project.scripts]
+smart_shape = "smart_shape.bin.launch_app:main"
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"

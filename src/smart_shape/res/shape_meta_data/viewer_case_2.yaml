@@ -1,0 +1,1260 @@
+softwareVersion: 0.1.0
+basic_shapes:
+  trapezoid:
+    xray-eye:
+      dim: [0, 0, 40, 20, 10]
+      anchor_pars: [3] 
+  rectangle:
+    mono_xtal_label:
+      dim: [0,0,100,20]
+      anchor_pars: null
+      decoration_cursor_off:
+        pen: 
+          color: [255, 0, 0]
+          width: 0
+          ls: NoPen
+        brush: 
+          color: [250, 250, 0, 255]      
+      labels:
+        text: ['Si111']
+        anchor: ['center']
+        orientation: ['horizontal']
+        decoration: 
+          - text_color: [200,200,200]
+            font_size: 10
+            alignment: AlignCenter
+            padding: 0   
+    mono_xtal_1:
+      dim: [0,0,200,5]
+      anchor_pars: null
+      decoration_cursor_off:
+        pen: 
+          color: [255, 0, 0]
+          width: 0
+          ls: NoPen
+        brush: 
+          color: [250, 250, 250, 255]
+      labels:
+        text: ['']
+        anchor: ['center']
+        orientation: ['horizontal']
+        decoration: 
+          - text_color: [200,200,200]
+            font_size: 10
+            alignment: AlignCenter
+            padding: 0      
+    mono_xtal_2:
+      dim: [0,0,200,5]
+      anchor_pars: null
+      decoration_cursor_off:
+        pen: 
+          color: [255, 0, 0]
+          width: 0
+          ls: NoPen
+        brush: 
+          color: [250, 250, 250, 255]      
+      labels:
+        text: ['']
+        anchor: ['center']
+        orientation: ['horizontal']
+        decoration: 
+          - text_color: [200,200,200]
+            font_size: 10
+            alignment: AlignCenter
+            padding: 0         
+    mono_txt_1:
+      dim: [0,0,200,30]
+      anchor_pars: null
+      decoration_cursor_off:
+        pen: 
+          color: [255, 0, 0]
+          width: 0
+          ls: NoPen
+        brush: 
+          color: [0, 0, 255, 255]
+      labels:
+        text: ['Bragg angle: ?? degree']
+        anchor: ['center']
+        orientation: ['horizontal']
+        decoration: 
+          - text_color: [200,200,200]
+            font_size: 10
+            alignment: AlignCenter
+            padding: 0         
+    mono_txt_2:
+      dim: [0,0,200,30]
+      anchor_pars: null
+      labels:
+        text: ['Energy: ??? keV']
+        anchor: ['center']
+        orientation: ['horizontal']
+        decoration: 
+          - text_color: [200,200,200]
+            font_size: 10
+            alignment: AlignCenter
+            padding: 0        
+      decoration_cursor_off:
+        pen: 
+          color: [255, 0, 0]
+          width: 0
+          ls: NoPen
+        brush: 
+          color: [0, 0, 255, 255]        
+    mono_txt_3:
+      dim: [0,0,200,30]
+      anchor_pars: null
+      labels:
+        text: ['x2pitch: ??? angle']
+        anchor: ['center']
+        orientation: ['horizontal']        
+        decoration: 
+          - text_color: [200,200,200]
+            font_size: 10
+            alignment: AlignCenter
+            padding: 0  
+      decoration_cursor_off:
+        pen: 
+          color: [255, 0, 0]
+          width: 0
+          ls: NoPen
+        brush: 
+          color: [0, 0, 255, 255]        
+       
+    absorber_unit:
+      dim: [0,0,25,20]
+      anchor_pars: null
+      labels:
+        text: ['1']
+        anchor: ['center']
+        orientation: ['horizontal']
+        decoration: 
+          - text_color: [0,0,0]
+            font_size: 10
+            alignment: AlignCenter
+            padding: 0
+    absorber_unit_2:
+      dim: [0,0,40,40]
+      anchor_pars: null
+      labels:
+        text: ['1']
+        anchor: ['center']
+        orientation: ['horizontal']
+        decoration: 
+          - text_color: [0,0,0]
+            font_size: 10
+            alignment: AlignCenter
+            padding: 0
+    BPM_frame:
+      dim: [0,0,100,100]
+      anchor_pars: [[5,5],true,true]
+      labels:
+        text: ['BPM']
+        anchor: ['top']
+        orientation: ['horizontal']
+        decoration: null            
+    type1:
+      dim: [0,0,120,120]
+      anchor_pars: null
+    type2:
+      dim: [0, 0, 80, 80]
+      anchor_pars: null
+      labels:
+        text: ['anchor_top_1','anchor_top_4','anchor_bottom_1','anchor_bottom_4','anchor_left_1','anchor_left_4','anchor_right_1','anchor_right_4','center_v','center_h']
+        anchor: ['anchor_top_0','anchor_top_3','anchor_bottom_0','anchor_bottom_3','anchor_left_0','anchor_left_3','anchor_right_0','anchor_right_3','center','center']
+        orientation: ['horizontal', 'vertical','horizontal', 'vertical','horizontal', 'vertical','horizontal', 'vertical','horizontal', 'vertical']
+        decoration: None
+    type2b:
+      dim: [0, 0, 80, 80]
+      anchor_pars: null
+      labels:
+        text: ['anchor_top_1','anchor_top_2','anchor_top_3','anchor_top_4','anchor_right_1','anchor_right_2','anchor_right_3','anchor_right_4']
+        anchor: ['anchor_top_0','anchor_top_1','anchor_top_2','anchor_top_3','anchor_right_0','anchor_right_1','anchor_right_2','anchor_right_3']
+        orientation: ['vertical','vertical','vertical','vertical','horizontal', 'horizontal','horizontal','horizontal']
+        decoration: None        
+    type3:
+      dim: [0, 0, 80, 30]
+      anchor_pars: null
+    type4:
+      dim: [0, 0, 30, 80]
+      anchor_pars: null
+    mirror:
+      dim: [0, 0, 60, 8]
+      anchor_pars: null
+      labels:
+        text: ['mirror']
+        anchor: ['bottom']
+        orientation: ['horizontal']   
+        decoration: null   
+    channel_cut_plane:
+      dim: [0, 0, 90, 16]
+      anchor_pars: [[8,8],true,false] 
+    tube:
+      dim: [0, 0, 25, 50]
+      anchor_pars: null      
+      labels:
+        text: ['x-ray eye']
+        anchor: ['right']
+        orientation: ['horizontal']   
+        decoration: null         
+    sintilator:
+      dim: [0, 0, 8, 70]
+      anchor_pars: [8]
+      labels:
+        text: ['sintillator']
+        anchor: ['right']
+        orientation: ['vertical']         
+        decoration: null
+  roundedRectangle:
+    type2:
+      dim: [0, 0, 150, 90, 10, 10]
+      anchor_pars: [[4,2], false, true]
+      labels:
+        text: ['pinholes']
+        anchor: ['top']
+        orientation: ['horizontal']         
+        decoration: null      
+    CRL:
+      dim: [0, 0, 80, 30, 3, 3]
+      anchor_pars: null
+      labels:
+        text: ['CRL']
+        anchor: ['top']
+        orientation: ['horizontal']         
+        decoration: null  
+    optics_table_top:
+      dim: [0, 0, 1530, 40, 0, 0]
+      anchor_pars: [[20, 4], false, false]
+      labels:
+        text: ['granite shared optics table']
+        anchor: ['center']
+        orientation: ['horizontal']         
+        decoration: null  
+      decoration_cursor_off:
+        pen:
+          color: [200,200,200,255]
+          width: 2
+          ls: SolidLine
+        brush:
+          color: [50, 50, 50, 255]
+    optics_table_spring:
+      dim: [0, 0, 40, 8, 0, 0]
+      anchor_pars: null
+      labels:
+        text: ['']
+        anchor: ['center']
+        orientation: ['horizontal']         
+        decoration: null              
+      decoration_cursor_off:
+        pen:
+          color: [200,200,200,255]
+          width: 1
+          ls: SolidLine
+        brush:
+          color: [100, 100, 100, 255]        
+    optics_table_leg:
+      dim: [0, 0, 80, 80, 10, 10]
+      anchor_pars: null
+      labels:
+        text: ['']
+        anchor: ['center']
+        orientation: ['horizontal']         
+        decoration: null 
+      decoration_cursor_off:
+        pen:
+          color: [200,200,200,255]
+          width: 1
+          ls: SolidLine
+        brush:
+          color: [100, 100, 100, 255]                    
+    beampipe:
+      dim: [0, 0, 120, 30, 10, 10]
+      anchor_pars: null
+      labels:
+        text: ['beampipe inplace']
+        anchor: ['top']
+        orientation: ['horizontal']         
+        decoration: null  
+    shutter:
+      dim: [0, 0, 30, 80, 3, 3]
+      anchor_pars: null
+      labels:
+        text: ['shutter']
+        anchor: ['top']
+        orientation: ['horizontal']         
+        decoration: null  
+    x_ray_eye_frame:
+      dim: [0, 0, 150, 90, 5, 5]
+      anchor_pars: [[6,3], true, true]      
+    type3:
+      dim: [0, 0, 80, 30, 10, 10]
+      anchor_pars: null
+    type4:
+      dim: [0, 0, 30, 80, 10, 10]
+      anchor_pars: null
+  circle:
+    mono_pitch_cw:
+      dim: [0, 0, 40]
+      anchor_pars: [8]  
+      labels:
+        text: ['pitcw']
+        anchor: ['center']
+        orientation: ['horizontal']         
+        decoration: null      
+    mono_pitch_acw:
+      dim: [0, 0, 40]
+      anchor_pars: [8]  
+      labels:
+        text: ['pitacw']
+        anchor: ['center']
+        orientation: ['horizontal']         
+        decoration: null      
+    mono_bragg_cw:
+      dim: [0, 0, 40]
+      anchor_pars: [8]  
+      labels:
+        text: ['monocw']
+        anchor: ['center']
+        orientation: ['horizontal']         
+        decoration: null      
+    mono_bragg_acw:
+      dim: [0, 0, 40]
+      anchor_pars: [8]  
+      labels:
+        text: ['monoacw']
+        anchor: ['center']
+        orientation: ['horizontal']         
+        decoration: null      
+    big:
+      dim: [0, 0, 120]
+      anchor_pars: [8]
+      labels:
+        text: ['0','1','2','3']
+        anchor: ['anchor_0','anchor_1','anchor_2','anchor_3']
+        orientation: ['vertical','vertical','horizontal', 'horizontal']
+        decoration: None
+    channel_cut_mv_handle_I:
+      dim: [0, 0, 20]
+      anchor_pars: [8]  
+      labels:
+        text: ['x']
+        anchor: ['center']
+        orientation: ['horizontal']         
+        decoration: null      
+    channel_cut_mv_handle_O:
+      dim: [0, 0, 20]
+      anchor_pars: [8]     
+      labels:
+        text: ['O']
+        anchor: ['center']
+        orientation: ['horizontal']         
+        decoration: null               
+    small:
+      dim: [0, 0, 25]
+      anchor_pars: [8]
+      # labels:
+        # text: ['right1','top','right3','bottom','left','right2']
+        # anchor: ['right','top','right','bottom','left','right']
+        # decoration: None
+    BPM_unit:
+      dim: [0, 0, 50]
+      anchor_pars: null
+    tiny:
+      dim: [0, 0, 4]
+      anchor_pars: [8]
+  isocelesTriangle:
+    type1:
+      dim: [0, 0, 40, 60]
+      anchor_pars: null
+      labels:
+        text: ['']
+        anchor: ['bottom']
+        orientation: ['horizontal']
+        decoration: None
+    sintillator_tweak:
+      dim: [0, 0, 15, 45]
+      anchor_pars: null
+      labels:
+        text: ['']
+        anchor: ['center']
+        orientation: ['horizontal']
+        decoration: null         
+    mono_tweak:
+      dim: [0, 0, 30, 60]
+      anchor_pars: null
+      labels:
+        text: ['']
+        anchor: ['center']
+        orientation: ['horizontal']
+        decoration: null         
+      decoration_cursor_off:
+        pen: 
+          color: [255, 0, 0]
+          width: 0
+          ls: NoPen
+        brush: 
+          color: [0, 255, 0, 255]
+    absorber_switch_up:
+      dim: [0, 0, 40, 60]
+      anchor_pars: null
+      labels:
+        text: ['up']
+        anchor: ['center']
+        orientation: ['horizontal']
+        decoration: null    
+    absorber_switch_down:
+      dim: [0, 0, 40, 60]
+      anchor_pars: null
+      labels:
+        text: ['dw']
+        anchor: ['center']
+        orientation: ['horizontal']
+        decoration: null              
+composite_shapes:
+  dcm:
+    shapes: 
+      - 'rectangle.mono_xtal_1*1'
+      - 'rectangle.mono_xtal_2*1'
+      - 'rectangle.mono_txt_1*1'
+      - 'rectangle.mono_txt_2*1'
+      - 'rectangle.mono_txt_3*1'
+      - 'isocelesTriangle.mono_tweak*4'
+      # - 'circle.mono_bragg_cw*1'
+      # - 'circle.mono_bragg_acw*1'
+      - 'rectangle.mono_xtal_label*1'
+      - 'rectangle.mono_txt_1*1'
+      - 'rectangle.mono_txt_1*1'
+      - 'isocelesTriangle.mono_tweak*4'
+    dynamic_shape_attributes:
+      (5,12,14):
+        change_value: -1
+      (6,13,15):
+        change_value: 1
+      (7,):
+        change_value: -1
+      (8,):
+        change_value: 1
+      (0,):
+        yoffset: -100
+      (9,):
+        map_par:
+          Si111: 2
+          Si311: 5
+        selected_xtal: Si111
+    ref_shape: null
+    hide: []
+    alignment:
+      shapes: [[0,1],[1,2],[2,3],[3,4],[4,5],[4,6],[3,7],[3,8],[0,9],[4,10],[10,11],[10,12],[10,13],[11,14],[11,15]]
+      anchors:
+        - ['translate','translate']
+        - ['top', 'bottom']
+        - ['top', 'bottom']
+        - ['top', 'bottom']
+        - ['left', 'bottom']
+        - ['right', 'bottom']
+        - ['left', 'bottom']
+        - ['right', 'bottom']
+        - ['bottom', 'top']
+        - ['top', 'bottom']
+        - ['top', 'bottom']
+        - ['left', 'bottom']
+        - ['right', 'bottom']
+        - ['left', 'bottom']
+        - ['right', 'bottom']
+      # gaps: [['dx_for_fix_exit','yoffset'],10,1,1,1,1,1,1]
+      gaps: [[100,-100],10,1,1,1,1,1,1,5,1,1,1,1,1,1]
+      gaps_absolute: true
+      ref_anchors: 
+        - [null, null]
+        - [null, null]
+        - [null, null]
+        - [null, null]
+        - [null, null]
+        - [null, null]
+        - [null, null]
+        - [null, null]
+        - [null, null]
+        - [null, null]
+        - [null, null]
+        - [null, null]
+        - [null, null]
+        - [null, null]
+        - [null, null]
+    transformation:
+      translate: [0,0]
+    models: 
+      0: eval:bragg={bliss://hasep25lab01:25000/xlab_session_2/bragg/position};-bragg
+      1: bliss://hasep25lab01:25000/xlab_session_2/x2pitch/position
+      2: eval:bragg={bliss://hasep25lab01:25000/xlab_session_2/bragg/position};bragg
+      3: eval:eng={bliss://hasep25lab01:25000/xlab_session_2/energy_axis/position};eng
+      4: eval:x2pitch={bliss://hasep25lab01:25000/xlab_session_2/x2pitch/position};x2pitch
+      5: bliss://hasep25lab01:25000/xlab_session_2/x2pitch/position
+      6: bliss://hasep25lab01:25000/xlab_session_2/x2pitch/position
+      7: bliss://hasep25lab01:25000/xlab_session_2/energy_axis/position
+      8: bliss://hasep25lab01:25000/xlab_session_2/energy_axis/position
+      9: bliss://hasep25lab01:25000/xlab_session_2/mono_hor/position
+      10: eval:x1roll={bliss://hasep25lab01:25000/xlab_session_2/x1roll/position};x1roll
+      11: eval:x2roll={bliss://hasep25lab01:25000/xlab_session_2/x2roll/position};x2roll
+      12: bliss://hasep25lab01:25000/xlab_session_2/x1roll/position
+      13: bliss://hasep25lab01:25000/xlab_session_2/x1roll/position
+      14: bliss://hasep25lab01:25000/xlab_session_2/x2roll/position
+      15: bliss://hasep25lab01:25000/xlab_session_2/x2roll/position
+    callbacks_upon_model_change:
+      0: ['callback_model_change_with_composite_rotation', 'which_gap', 0]
+      1: null
+      2: ['callback_model_change_with_text_label', 'anchor','center','label', 'bragg angel:','end_txt','degree']
+      3: ['callback_model_change_with_text_label', 'anchor','center','label', 'energy:','end_txt','keV']
+      4: ['callback_model_change_with_text_label', 'anchor','center','label', 'x2pitch:','end_txt','degree']
+      5: null
+      6: null
+      7: null
+      8: null
+      9: null
+      10: ['callback_model_change_with_text_label', 'anchor','center','label', 'x1roll:','end_txt','degree']
+      11: ['callback_model_change_with_text_label', 'anchor','center','label', 'x2roll:','end_txt','degree']
+      12: null
+      13: null
+      14: null
+      15: null
+    callbacks_upon_leftmouse_click:
+      0: null
+      1: null
+      2: null
+      3: null
+      4: null
+      5: ['callback_leftmouse_click_change_attribute_value']
+      6: ['callback_leftmouse_click_change_attribute_value']
+      7: ['callback_leftmouse_click_change_attribute_value']
+      8: ['callback_leftmouse_click_change_attribute_value']
+      9: null
+      10: null
+      11: null
+      12: ['callback_leftmouse_click_change_attribute_value']
+      13: ['callback_leftmouse_click_change_attribute_value']
+      14: ['callback_leftmouse_click_change_attribute_value']
+      15: ['callback_leftmouse_click_change_attribute_value']
+    callbacks_upon_rightmouse_click:
+      0: null
+      1: null
+      2: null
+      3: null
+      4: null
+      5: ['callback_rightmouse_click_set_step_size','attr_name','change_value']
+      6: ['callback_rightmouse_click_set_step_size','attr_name','change_value']
+      7: ['callback_rightmouse_click_set_step_size','attr_name','change_value']
+      8: ['callback_rightmouse_click_set_step_size','attr_name','change_value']
+      9: ['callback_rightmouse_click_set_item','attr_name','map_par','show_label',True]
+      10: null
+      11: null
+      12: ['callback_rightmouse_click_set_step_size','attr_name','change_value']
+      13: ['callback_rightmouse_click_set_step_size','attr_name','change_value']
+      14: ['callback_rightmouse_click_set_step_size','attr_name','change_value']
+      15: ['callback_rightmouse_click_set_step_size','attr_name','change_value']
+  channel_cut:
+    shapes: ['rectangle.channel_cut_plane*2','circle.channel_cut_mv_handle_I*1','circle.channel_cut_mv_handle_O*1','isocelesTriangle.absorber_switch_up*1','isocelesTriangle.absorber_switch_down*1']
+    # shapes: ['circle.channel_cut_guide*1', 'rectangle.channel_cut_plane*2']
+    beam_height_offset: -18
+    ref_shape: null
+    hide: []
+    dynamic_shape_attributes:
+      (0,):
+        step_size: -1
+    alignment:
+      shapes: [[0,1],[0,2],[0,3],[1,4],[0,5]]
+      anchors:
+        # - ['bottom', 'anchor_top_2']
+        # - ['top','anchor_bottom_2']
+        - ['anchor_top_6','anchor_bottom_6']
+        - ['left','right']
+        - ['right', 'left']
+        - ['top','bottom']
+        - ['bottom','bottom']
+      gaps: [5,0,0, 0.1, 0.1]
+      # ref_anchors: [[null, 'top'],[null,'bottom']]
+      ref_anchors: [['top','bottom'],[null, null],[null, null], [null, null], [null, null]]
+    transformation: 
+      translate: [0,0]
+    models: 
+      0: tango://hasep25lab01:10000/sys/tg_test/1/ampli
+      # index: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+      # model: tango://hasep25lab01:10000/sys/tg_test/1/boolean_spectrum_ro
+    callbacks_upon_model_change:
+      0: ['callback_model_change_with_composite_rotation']
+    callbacks_upon_leftmouse_click:
+      0: null
+    callbacks_upon_rightmouse_click:
+      0: ['callback_rightmouse_click_set_step_size','attr_name','step_size','composite_attr_name','beam_height_offset']
+  BPM:
+    shapes: ['circle.tiny*1', 'rectangle.BPM_frame*1','circle.BPM_unit*4']
+    ref_shape: null
+    hide: [0]
+    alignment:
+      shapes: [[0,1],[1,2],[1,3],[1,4],[1,5]]
+      anchors:
+        - ['right','left']
+        - ['anchor_grid_1_1', 'cen']
+        - ['anchor_grid_1_3', 'cen']
+        - ['anchor_grid_3_1', 'cen']
+        - ['anchor_grid_3_3', 'cen']
+      gaps: [0,0,0,0,0]
+      ref_anchors: [[null, null], ['right','left'],['right','left'],['right','left'],['right','left']]
+    transformation: 
+      translate: [0,0]
+    models: 
+      2: tango://hasep25lab01:10000/sys/tg_test/1/long64_scalar
+      3: tango://hasep25lab01:10000/sys/tg_test/1/long_scalar
+      4: tango://hasep25lab01:10000/sys/tg_test/1/short_scalar
+      5: tango://hasep25lab01:10000/sys/tg_test/1/short_scalar_ro
+      # index: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+      # model: tango://hasep25lab01:10000/sys/tg_test/1/boolean_spectrum_ro
+    callbacks_upon_model_change:
+      index: [2,3,4,5]
+      callback: ['callback_model_change_with_text_label', 'anchor','center','label', null]
+      #args: [null, null, null, null]
+    callbacks_upon_leftmouse_click:
+      index: [2,3,4,5]
+      callback: null
+    callbacks_upon_rightmouse_click:
+      index: [2,3,4,5]
+      callback: null
+  CRL:
+    shapes: ['circle.tiny*1', 'roundedRectangle.CRL*1']
+    ref_shape: null
+    hide: [0]
+    alignment:
+      shapes: [[0,1]]
+      anchors:
+        - ['right','left']
+      gaps: [0]
+      ref_anchors: [[null, null]]
+    transformation: 
+      translate: [0,0]
+    models: []
+      # index: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+      # model: tango://hasep25lab01:10000/sys/tg_test/1/boolean_spectrum_ro
+    callbacks_upon_model_change:
+      index: [2,3,4,5]
+      callback: ['callback_model_change_with_text_label', 'anchor','center','label', null]
+      #args: [null, null, null, null]
+    callbacks_upon_leftmouse_click:
+      index: [2,3,4,5]
+      callback: null
+    callbacks_upon_rightmouse_click:
+      index: [2,3,4,5]
+      callback: null
+  optics_table:
+    shapes: ['roundedRectangle.optics_table_top*1', 'roundedRectangle.optics_table_spring*2', 'roundedRectangle.optics_table_leg*2','isocelesTriangle.absorber_switch_up*3','isocelesTriangle.absorber_switch_down*3','circle.channel_cut_mv_handle_I*3','circle.channel_cut_mv_handle_O*3']
+    ref_shape: null
+    hide: []
+    alignment:
+      shapes: 
+        - [0,1]
+        - [0,2]
+        - [1,3]
+        - [2,4]
+        - [3,5] #left pillar - up(5) - down(8) - I(11) - O (12)
+        - [3,8]
+        - [3,11]
+        - [3,14]
+        - [4,6]
+        - [4,9]
+        - [4,12]
+        - [4,15]
+        - [0,7]
+        - [0,10]
+        - [0,13]
+        - [0,16]
+      anchors:
+        - ['anchor_bottom_1','top']
+        - ['anchor_bottom_18','top']
+        - ['bottom', 'top']
+        - ['bottom', 'top']
+        - ['cen', 'bottom']
+        - ['cen', 'bottom']
+        - ['cen', 'left']
+        - ['cen', 'right']
+        - ['cen', 'bottom']
+        - ['cen', 'bottom']
+        - ['cen', 'left']
+        - ['cen', 'right']
+        - ['anchor_bottom_10', 'top']
+        - ['anchor_bottom_11', 'bottom']
+        - ['anchor_bottom_9', 'top']
+        - ['anchor_bottom_8', 'top']
+      gaps: [0.3,0.3,0.,0.,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.2,0.2,0.2,0.2]
+      ref_anchors: 
+        - ['bottom', null]
+        - ['bottom',null]
+        - [null, null]
+        - [null, null]
+        - ['top', null]
+        - ['bottom', null]
+        - ['right',null]
+        - ['left',null]
+        - ['top',null]
+        - ['bottom',null]
+        - ['right',null]
+        - ['left',null]
+        - ['bottom',null]
+        - ['bottom',null]
+        - ['bottom',null]
+        - ['bottom',null]
+    transformation: 
+      translate: [0,0]
+    models: []
+      # index: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+      # model: tango://hasep25lab01:10000/sys/tg_test/1/boolean_spectrum_ro
+    callbacks_upon_model_change:
+      index: [2,3,4,5]
+      callback: ['callback_model_change_with_text_label', 'anchor','center','label', null]
+      #args: [null, null, null, null]
+    callbacks_upon_leftmouse_click:
+      index: [2,3,4,5]
+      callback: null
+    callbacks_upon_rightmouse_click:
+      index: [2,3,4,5]
+      callback: null
+  shutter:
+    shapes: ['circle.tiny*1', 'roundedRectangle.shutter*1']
+    ref_shape: null
+    hide: [0]
+    alignment:
+      shapes: [[0,1]]
+      anchors:
+        - ['right','left']
+      gaps: [0]
+      ref_anchors: [[null, null]]
+    transformation: 
+      translate: [0,0]
+    models: 
+      1: tango://hasep25lab01:10000/sys/tg_test/1/boolean_scalar
+      # index: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+      # model: tango://hasep25lab01:10000/sys/tg_test/1/boolean_spectrum_ro
+    callbacks_upon_model_change:
+      index: [1]
+      callback: ['callback_model_change_with_transformation', 'mv_dir', 'y', 'sign', '+', 'max_translation_range', '[-60,0]']
+      #callback: ['callback_model_change_with_text_label', 'anchor','center','label', null]
+      #args: [null, null, null, null]
+    callbacks_upon_leftmouse_click:
+      1: ['callback_leftmouse_click_change_attribute_bool']
+    callbacks_upon_rightmouse_click:
+      index: [1]
+      callback: null  
+  pipe:
+    shapes: ['circle.tiny*1', 'roundedRectangle.beampipe*1']
+    ref_shape: null
+    hide: [0]
+    alignment:
+      shapes: [[0,1]]
+      anchors:
+        - ['right','left']
+      gaps: [0]
+      ref_anchors: [[null, null]]
+    transformation: 
+      translate: [0,0]
+    models: 
+      1: tango://hasep25lab01:10000/sys/tg_test/1/boolean_scalar
+      #1: tango://hasep25lab01:10000/sys/tg_test/1/boolean_scalar
+      # index: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+      # model: tango://hasep25lab01:10000/sys/tg_test/1/boolean_spectrum_ro
+    callbacks_upon_model_change:
+      1: null
+    callbacks_upon_leftmouse_click:
+      1: ['callback_leftmouse_click_change_txt_label','label_options',"['beampipe out of place','beampipe in place']",'color_options',"[[0,255,0],[255,60,10]]"]
+    callbacks_upon_rightmouse_click:
+      index: [1]
+      callback: null      
+  x-ray-eye:
+    shapes: ['circle.tiny*1', 'roundedRectangle.x_ray_eye_frame*1','circle.tiny*1','rectangle.mirror*1','rectangle.sintilator*1','trapezoid.xray-eye*1','rectangle.tube*1','isocelesTriangle.sintillator_tweak*2']
+    ref_shape: null
+    hide: [0,2]
+    alignment:
+      shapes: [[0,1],[1,2],[2,3],[1,4],[1,5],[5,6],[4,7],[4,8]]
+      anchors:
+        - ['right','left']
+        - ['anchor_grid_1_1', 'cen']
+        - ['anchor_1','bottom']
+        - ['anchor_grid_1_4', 'cen']
+        - ['anchor_grid_0_1', 'top']
+        - ['bottom', 'bottom']
+        - ['anchor_left_7', 'bottom']
+        - ['anchor_right_0', 'bottom']
+      gaps: [0,0,0,0,1.6,0.2,0.1,0.1]
+      ref_anchors: [[null, null], ['right','left'],[null,null],['right','left'],['top', null],[null, null],['left', null],['right',null]]
+    transformation: 
+      translate: [0,0]
+    dynamic_shape_attributes:
+      (7,):
+        change_value: -1
+      (8,):
+        change_value: 1      
+    models: 
+      index: [4,7,8]
+      # model: bliss://hasep25lab01:25000/xlab_session_2/ccx/position
+      model: tango://hasep25lab01.desy.de:10000/p25/smar/axis.02/position
+    callbacks_upon_model_change:
+      4: ['callback_model_change_with_transformation', 'mv_dir', 'x', 'sign', '+', 'max_translation_range', '[-100,100]']
+      7: ['callback_model_change_with_transformation', 'mv_dir', 'x', 'sign', '+', 'max_translation_range', '[-100,100]']
+      8: ['callback_model_change_with_transformation', 'mv_dir', 'x', 'sign', '+', 'max_translation_range', '[-100,100]']
+    callbacks_upon_leftmouse_click:
+      4: null
+      7: ['callback_leftmouse_click_change_attribute_value']
+      8: ['callback_leftmouse_click_change_attribute_value']
+    callbacks_upon_rightmouse_click:
+      4: null
+      7: ['callback_rightmouse_click_set_step_size','attr_name','change_value']
+      8: ['callback_rightmouse_click_set_step_size','attr_name','change_value']
+  slit:
+    shapes: ['circle.tiny*2', 'rectangle.type3*2', 'rectangle.type4*2']
+    ref_shape: null
+    hide: [0,1]
+    alignment:
+      shapes: [[0,4],[4,1],[1,5],[1,2], [1,3]]
+      anchors: [['right','left'],['right','left'], ['right','left'],['top','bottom'],['bottom','top']]
+      gaps: [0.,0.,0.,0.,0]
+      ref_anchors: [[null, null],[null, null], [null, null], [null, null],[null, null]]
+    transformation: 
+      translate: [0,0]
+    models: 
+      3: tango://hasep25lab01.desy.de:10000/p25/motor/lab.02/position
+      2: tango://hasep25lab01.desy.de:10000/p25/motor/lab.02/position
+      5: tango://hasep25lab01.desy.de:10000/p25/motor/lab.02/position
+      4: tango://hasep25lab01.desy.de:10000/p25/motor/lab.02/position
+    callbacks_upon_model_change:
+      2: 
+        - ['callback_model_change_with_transformation', 'mv_dir', 'y', 'sign', '+', 'max_translation_range', '[0,10]']
+        - ['callback_model_change_with_text_label', 'anchor', 'bottom', 'orientation','horizontal']
+      3:
+        - ['callback_model_change_with_transformation', 'mv_dir', 'y', 'sign', '-', 'max_translation_range', '[0,10]']
+        - ['callback_model_change_with_text_label', 'anchor', 'top','orientation','horizontal']
+      4: 
+        - ['callback_model_change_with_transformation', 'mv_dir', 'x', 'sign', '+', 'max_translation_range', '[0,10]']
+        - ['callback_model_change_with_text_label', 'anchor', 'right','orientation','vertical']
+      5: 
+        - ['callback_model_change_with_transformation', 'mv_dir', 'x', 'sign', '-', 'max_translation_range', '[0,10]']
+        - ['callback_model_change_with_text_label', 'anchor', 'left', 'orientation', 'vertical']
+    callbacks_upon_leftmouse_click:
+      3: null
+      2: null
+      5: null
+      4: null      
+    callbacks_upon_rightmouse_click:
+      3: null
+      2: null
+      5: null
+      4: null      
+  absorber2:
+    shapes: ['circle.tiny*1','rectangle.absorber_unit_2*4','isocelesTriangle.absorber_switch_up*4','isocelesTriangle.absorber_switch_down*4']
+    ref_shape: null
+    hide: [0]
+    alignment:
+      shapes: [[0,1],[1,2],[2,3],[3,4],[1,5],[1,9],[2,6],[2,10],[3,7],[3,11],[4,8],[4,12]]
+      anchors: 
+        - ['right','left']
+        - ['right','left']
+        - ['right','left']
+        - ['right','left']
+        - ['top','bottom']
+        - ['bottom','bottom']
+        - ['top','bottom']
+        - ['bottom','bottom']
+        - ['top','bottom']
+        - ['bottom','bottom']
+        - ['top','bottom']
+        - ['bottom','bottom']
+      gaps: [0.1,0.1,0.1,0.1,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2]
+      ref_anchors: [[null, null],[null, null],[null, null],[null, null],[null, null],[null, null],[null, null],[null, null],[null, null],[null, null],[null, null],[null, null],[null, null],[null, null],[null, null]]
+    transformation: 
+      translate: [0,0]
+    models: 
+      index: [1,2,3,4,5,6,7,8,9,10,11,12]
+      model: tango://hasep25lab01:10000/p25/smar/axis.02/position
+      #model: bliss://hasep25lab01:25000/xlab_session_2/filtW_first/transmission
+    dynamic_shape_attributes:
+      (5,6,7,8):
+        change_value: 1
+      (5,):
+        filter_map:
+          Al_0: 2
+          Al_0.025: 2.5
+          Al_0.1: 3
+          Ti_0.025: 3.5
+          Ti_0.1: 4
+          Cu_0.025: 4.5
+          Cu_0.1: 5
+          W_0.025: 5.5
+          W_0.1: 6
+      (9,10,11,12):
+        change_value: -1
+    callbacks_upon_model_change:
+      # index: [1,5,9]
+      # callback: ['callback_model_change_with_text_label', 'anchor','center','label', null]
+      1: ['callback_model_change_with_text_label', 'anchor','center','label', null]
+      2: ['callback_model_change_with_text_label', 'anchor','center','label', null]
+      3: ['callback_model_change_with_text_label', 'anchor','center','label', null]
+      4: ['callback_model_change_with_text_label', 'anchor','center','label', null]
+      5: null
+      6: null
+      7: null
+      8: null
+      9: null
+      10: null
+      11: null
+      12: null
+    callbacks_upon_leftmouse_click:
+      1: null
+      2: null
+      3: null
+      4: null
+      5: ['callback_leftmouse_click_change_attribute_value']
+      6: ['callback_leftmouse_click_change_attribute_value']
+      7: ['callback_leftmouse_click_change_attribute_value']
+      8: ['callback_leftmouse_click_change_attribute_value']
+      9: ['callback_leftmouse_click_change_attribute_value']
+      10: ['callback_leftmouse_click_change_attribute_value']
+      11: ['callback_leftmouse_click_change_attribute_value']
+      12: ['callback_leftmouse_click_change_attribute_value']
+    callbacks_upon_rightmouse_click:
+      1: ['callback_rightmouse_click_show_device_panel']
+      2: ['callback_rightmouse_click_show_device_panel']
+      3: ['callback_rightmouse_click_show_device_panel']
+      4: ['callback_rightmouse_click_show_device_panel']
+      5: ['callback_rightmouse_click_set_item','attr_name','filter_map']
+      6: ['callback_rightmouse_click_set_step_size','attr_name','change_value']
+      7: ['callback_rightmouse_click_set_step_size','attr_name','change_value']
+      8: ['callback_rightmouse_click_set_step_size','attr_name','change_value']
+      9: ['callback_rightmouse_click_set_step_size','attr_name','change_value']
+      10: ['callback_rightmouse_click_set_step_size','attr_name','change_value']
+      11: ['callback_rightmouse_click_set_step_size','attr_name','change_value']
+      12: ['callback_rightmouse_click_set_step_size','attr_name','change_value']
+  absorber:
+    shapes: ['rectangle.absorber_unit*16']
+    ref_shape: null
+    hide: []
+    static_labels: ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16']
+    alignment:
+      shapes: [[0,1],[1,2],[2,3],[0,4],[4,5],[5,6],[6,7],[4,8],[8,9],[9,10],[10,11],[8,12],[12,13],[13,14],[14,15]]
+      anchors: 
+        - ['top','bottom']
+        - ['top','bottom']
+        - ['top','bottom']
+        - ['right','left']
+        - ['top','bottom']
+        - ['top','bottom']
+        - ['top','bottom']
+        - ['right','left']
+        - ['top','bottom']
+        - ['top','bottom']
+        - ['top','bottom']
+        - ['right','left']
+        - ['top','bottom']
+        - ['top','bottom']
+        - ['top','bottom']
+      gaps: [0.,0.,0,0,0,0,0,0,0,0,0,0,0,0,0]
+      ref_anchors: [[null, null],[null, null],[null, null],[null, null],[null, null],[null, null],[null, null],[null, null],[null, null],[null, null],[null, null],[null, null],[null, null],[null, null],[null, null]]
+    transformation: 
+      translate: [0,0]
+    models: 
+      index: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+      model: tango://hasep25lab01:10000/sys/tg_test/1/boolean_spectrum_ro
+    callbacks_upon_model_change:
+      index: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+      callback: ['callback_model_change_with_decoration_on_off_idx', 'idx']
+      args: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+    callbacks_upon_leftmouse_click:
+      index: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+      callback: null
+    callbacks_upon_rightmouse_click:
+      index: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+      callback: null
+  valve:
+    shapes: ['circle.tiny*2', 'isocelesTriangle.type1*2']
+    ref_shape: null
+    hide: [0,1]
+    alignment:
+      shapes: [[0,2],[2,1],[2,3]]
+      anchors: [['right','bottom'],['top','left'],['top','top']]
+      gaps: [0.,0.,0]
+      ref_anchors: [[null, null],[null, null],[null,null]]
+    transformation: 
+      translate: [0,0]
+    models: 
+      1: tango://hasep25lab01:10000/sys/tg_test/1/boolean_scalar
+      2: tango://hasep25lab01:10000/sys/tg_test/1/boolean_scalar
+      3: tango://hasep25lab01:10000/sys/tg_test/1/boolean_scalar
+    callbacks_upon_model_change:
+      1: ['callback_model_change_with_text_label_on_off', 'anchor', 'top']
+      2: ['callback_model_change_with_decoration_on_off']
+      3: ['callback_model_change_with_decoration_on_off']
+    callbacks_upon_leftmouse_click:
+      3: null
+      1: ['callback_leftmouse_click_change_attribute_bool']
+      2: ['callback_leftmouse_click_change_attribute_bool']
+    callbacks_upon_rightmouse_click:
+      3: null
+      1: ['callback_leftmouse_click_change_attribute_bool']
+      2: ['callback_leftmouse_click_change_attribute_bool']
+  pinhole:
+    shapes: ['circle.tiny*1','roundedRectangle.type2*1', 'circle.small*8']
+    # shapes: ['rectangle.type1*1']
+    ref_shape: null
+    hide: [0]
+    alignment:
+      shapes: [[0,1],[1,2],[1,3],[1,4],[1,5],[1,6],[1,7],[1,8],[1,9]]
+      anchors: 
+        - ['right','left']
+        - ['anchor_grid_0_0','cen']
+        - ['anchor_grid_0_1','cen']
+        - ['anchor_grid_0_2','cen']
+        - ['anchor_grid_0_3','cen']
+        - ['anchor_grid_1_0','cen']
+        - ['anchor_grid_1_1','cen']
+        - ['anchor_grid_1_2','cen']
+        - ['anchor_grid_1_3','cen']
+      gaps: [0,0.,0.,0,0,0,0,0,0]
+      ref_anchors: [['bottom', 'top'],['bottom', 'top'],['bottom', 'top'],['bottom', 'top'],['bottom', 'top'],['bottom', 'top'],['bottom', 'top'],['bottom', 'top'],['bottom', 'top']]
+    transformation: 
+      translate: [0,0]
+    models: 
+      9: tango://hasep25lab01:10000/sys/tg_test/1/boolean_spectrum_ro
+      2: tango://hasep25lab01:10000/sys/tg_test/1/boolean_spectrum_ro
+      3: tango://hasep25lab01:10000/sys/tg_test/1/boolean_spectrum_ro
+      4: tango://hasep25lab01:10000/sys/tg_test/1/boolean_spectrum_ro
+      5: tango://hasep25lab01:10000/sys/tg_test/1/boolean_spectrum_ro
+      6: tango://hasep25lab01:10000/sys/tg_test/1/boolean_spectrum_ro
+      7: tango://hasep25lab01:10000/sys/tg_test/1/boolean_spectrum_ro
+      8: tango://hasep25lab01:10000/sys/tg_test/1/boolean_spectrum_ro
+      # 0: sys/tg_test/1/boolean_scalar
+      # 1: sys/tg_test/1/boolean_scalar
+      # 2: sys/tg_test/1/boolean_scalar
+    callbacks_upon_model_change:
+      9: ['callback_model_change_with_decoration_on_off_idx', 'idx', '0']
+      2: ['callback_model_change_with_decoration_on_off_idx', 'idx', '1']
+      3: ['callback_model_change_with_decoration_on_off_idx', 'idx', '2']
+      4: ['callback_model_change_with_decoration_on_off_idx', 'idx', '3']
+      5: ['callback_model_change_with_decoration_on_off_idx', 'idx', '4']
+      6: ['callback_model_change_with_decoration_on_off_idx', 'idx', '5']
+      7: ['callback_model_change_with_decoration_on_off_idx', 'idx', '6']
+      8: ['callback_model_change_with_decoration_on_off_idx', 'idx', '7']
+    callbacks_upon_leftmouse_click:
+      9: null
+      2: null
+      3: null
+      4: null
+      5: null
+      6: null
+      7: null
+      8: null
+    callbacks_upon_rightmouse_click:
+      9: null
+      2: null
+      3: null
+      4: null
+      5: null
+      6: null
+      7: null
+      8: null
+  anchor:
+    shapes: ['circle.tiny*2']
+    ref_shape: null
+    hide: [0,1]
+    alignment:
+      shapes: [[0,1]]
+      anchors: [['right','left']]
+      gaps: [0.]
+      ref_anchors: [[null, null]]
+    transformation: 
+      translate: [220,220]
+    models: []
+    callbacks_upon_model_change:
+      1: []
+      2: []
+    callbacks_upon_leftmouse_click:
+      1: null
+      2: null
+    callbacks_upon_rightmouse_click:
+      1: null
+      2: null
+  anchor2:
+    shapes: ['circle.big*2']
+    ref_shape: null
+    hide: []
+    alignment:
+      shapes: [[0,1]]
+      anchors: [['translate','translate']] #[['right','left']]
+      gaps: [[30,40]] #[0.]
+      ref_anchors: [[null, null]]
+    transformation: 
+      translate: [0,0]
+    models: []
+    callbacks_upon_model_change:
+      1: []
+      2: []
+    callbacks_upon_leftmouse_click:
+      1: null
+      2: null
+    callbacks_upon_rightmouse_click:
+      1: null
+      2: null
+  label_eg:
+    shapes: ['circle.big*1','rectangle.type2b*1']
+    ref_shape: null
+    hide: [0]
+    alignment:
+      shapes: [[0,1]]
+      anchors: [['left','right']]
+      gaps: [0.]
+      ref_anchors: [[null, null]]
+    transformation: 
+      translate: [220,220]
+    models: []
+    callbacks_upon_model_change:
+      1: []
+      2: []
+    callbacks_upon_leftmouse_click:
+      1: null
+      2: null      
+    callbacks_upon_rightmouse_click:
+      1: null
+      2: null      
+viewers:
+  shared_optics_table:
+    composites: ['anchor','channel_cut', 'slit','shutter', 'BPM','absorber2', 'valve','CRL','slit','pinhole','x-ray-eye','pinhole','valve','pipe','optics_table']
+    cut_points: [14]
+    transformation:
+      translate:
+        type: ['relative','relative'] #or absolute
+        first_composite: 
+          - [10, 160] #always in absolute value
+          - [225, 226]
+        values: 
+          - - [20, 0] #either relative offsets in dx and dy directions or a list of absolute values for the other composite shapes.
+          - - [25, 0]
+        # - [10, 220]
+        # - [40,220]
+        # - [200, 220]
+        # - [380, 220]
+        # - [590, 220]
+        # - [880, 220]
+        # - [1100, 220]
+        # - [1250, 220]
+        # - [1750, 220]
+        # - [1990, 220]
+    connection:
+      anchor.1.right<=>channel_cut.0.dynamic_anchor<=>channel_cut.1.dynamic_anchor<=>end:
+        pen:
+          color: [255, 0, 0]
+          width: 2
+          ls: DotLine
+        direct_connect: True
+        draw_after: False
+        dynamic_anchor_pars:
+          - angle: 0
+            side: [null,'top']    
+          - angle: -shape.transformation['rotate']*2
+            side: ['top','bottom']                
+          - angle: 0
+            side: ['bottom',null]                
+      # channel_cut.0.dynamic_anchor<=>channel_cut.1.dynamic_anchor:
+      #   pen:
+      #     color: [255, 0, 0]
+      #     width: 2
+      #     ls: DotLine
+      #   direct_connect: True
+      #   draw_after: False
+      #   dynamic_anchor_pars:
+      #     angle: shape.transformation['rotate']*2
+      #     side: ['top','bottom']     
+      # anchor.1.right<=>anchor2.1.left:
+      #   pen:
+      #     color: [255, 0, 0]
+      #     width: 2
+      #     ls: DotLine
+      #   direct_connect: True
+      #   draw_after: False        
+      x-ray-eye.3.bottom<=>x-ray-eye.4.left:
+        pen:
+          color: [255, 0, 0]
+          width: 1
+          ls: SolidLine
+        direct_connect: True
+        draw_after: true           
+      x-ray-eye.3.bottom<=>x-ray-eye.5.anchor_top_1:
+        pen:
+          color: [255, 0, 0]
+          width: 1
+          ls: SolidLine
+        direct_connect: True
+        draw_after: true                    
+  viewer2:
+    composites: ['valve','anchor2']
+    transformation:
+      translate:
+        type: absolute #or absolute
+        first_composite: [100, 220] #always in absolute value
+        values:   
+          - [220, 220]
+  DCM:
+    composites: ['dcm']
+    transformation:
+      translate:
+        type: absolute #or absolute
+        first_composite: [10, 320] #always in absolute value
+        values: 
+          - [100, 320] #either relative offsets in dx and dy directions or a list of absolute values for the other composite shapes.
+          - [200, 320] #either relative offsets in dx and dy directions or a list of absolute values for the other composite shapes.
+    connection:
+      # end<=>dcm.0.top<=>dcm.1.anchor_bottom_2<=>end:
+      end<=>dcm.0.anchor_top_2<=>dcm.1.anchor_bottom_2<=>end:
+        pen:
+          color: [255, 0, 0]
+          width: 5
+          ls: SolidLine
+        direct_connect: True
+        draw_after: False          
+  viewer3:
+    composites: ['anchor2']
+    transformation:
+      translate:
+        type: relative #or absolute
+        first_composite: [100, 220] #always in absolute value
+        values:   
+          - [80, 0]
+  absorber:
+    composites: ['absorber','anchor']
+    transformation:
+      translate:
+        type: absolute #or absolute
+        first_composite: [100, 220] #always in absolute value
+        values:   
+          - [220, 220]
+  channel_cut:
+    composites: ['channel_cut','anchor']
+    transformation:
+      translate:
+        type: absolute #or absolute
+        first_composite: [100, 220] #always in absolute value
+        values:   
+          - [220, 220]          
+  x-ray-eye:
+    composites: ['x-ray-eye','anchor']
+    transformation:
+      translate:
+        type: absolute #or absolute
+        first_composite: [100, 220] #always in absolute value
+        values:   
+          - [220, 220]
+    connection:
+      x-ray-eye.3.bottom<=>x-ray-eye.4.left:
+        pen:
+          color: [255, 0, 0]
+          width: 1
+          ls: SolidLine
+        direct_connect: True
+        draw_after: True           
+      x-ray-eye.3.bottom<=>x-ray-eye.5.anchor_top_1:
+        pen:
+          color: [255, 0, 0]
+          width: 1
+          ls: SolidLine
+        direct_connect: True
+        draw_after: True           
