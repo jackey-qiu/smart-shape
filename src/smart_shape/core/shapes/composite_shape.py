@@ -1,5 +1,5 @@
 from taurus.qt.qtgui.base import TaurusBaseComponent
-from PyQt5.QtCore import pyqtSignal
+from PyQt5.QtCore import pyqtSignal, QTimer
 from PyQt5.QtCore import QObject
 import copy
 from functools import partial
@@ -53,6 +53,14 @@ class shapeComposite(TaurusBaseComponent, QObject):
         self.dx_for_fix_exit = 0
         self.parent = findMainWindow()
         self.build_composite()
+        self.timer = QTimer()
+        self.timer.timeout.connect(self.rotate_with_time)
+
+    def rotate_with_time(self):
+        current = self.ref_shape.transformation['rotate']
+        self.ref_shape.transformation = {'rotate':(current + 10)%360}
+        self.build_composite()
+        self.parent.widget_synoptic.update()
 
     def set_dx_for_fix_exit(self, dx):
         self.dx_for_fix_exit = dx

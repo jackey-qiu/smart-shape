@@ -1,0 +1,232 @@
+softwareVersion: 0.1.0
+basic_shapes:
+  trapezoid:
+    tz1:
+      dim: [0, 0, 40, 20, 10]
+      anchor_pars: [3] 
+    tz2:
+      dim: [0, 0, 80, 40, 20]
+      anchor_pars: [3]       
+  rectangle:
+    rt1:
+      dim: [0,0,100,20]
+      anchor_pars: null
+      decoration_cursor_off:
+        pen: 
+          color: [255, 0, 0]
+          width: 0
+          ls: NoPen
+        brush: 
+          color: [250, 250, 0, 255]      
+      labels:
+        text: ['Si111']
+        anchor: ['center']
+        orientation: ['horizontal']
+        decoration: 
+          - text_color: [200,200,200]
+            font_size: 10
+            alignment: AlignCenter
+            padding: 0   
+  roundedRectangle:
+    rrt1:
+      dim: [0, 0, 150, 90, 10, 10]
+      anchor_pars: [[4,2], false, true]
+      labels:
+        text: ['pinholes']
+        anchor: ['top']
+        orientation: ['horizontal']         
+        decoration: null      
+  circle:
+    cl1:
+      dim: [0, 0, 40]
+      anchor_pars: [4]  
+      labels:
+        text: ['pitcw']
+        anchor: ['center']
+        orientation: ['horizontal']         
+        decoration: null      
+  isocelesTriangle:
+    it1:
+      dim: [0, 0, 40, 60]
+      anchor_pars: null
+      labels:
+        text: ['']
+        anchor: ['bottom']
+        orientation: ['horizontal']
+        decoration: None
+composite_shapes:
+  row_alignment:
+    shapes: 
+      - 'trapezoid.tz1*1'
+      - 'rectangle.rt1*1'
+      - 'roundedRectangle.rrt1*1'
+      - 'circle.cl1*1'
+      # - 'isocelesTriangle.it1*1'
+    ref_shape: null
+    hide: []
+    alignment:
+      shapes: [[0,1],[1,2],[2,3]]
+      anchors:
+        - ['right', 'left']
+        - ['right', 'left']
+        - ['right', 'left']
+      gaps: [20,20,20]
+      gaps_absolute: true
+      ref_anchors: 
+        - [null, null]
+        - [null, null]
+        - [null, null]
+    transformation:
+      translate: [0,0]
+    models: []
+    callbacks_upon_model_change: []
+    callbacks_upon_leftmouse_click: []
+    callbacks_upon_rightmouse_click: []
+  column_alignment:
+    shapes: 
+      - 'trapezoid.tz2*2'
+      - 'rectangle.rt1*1'
+      - 'roundedRectangle.rrt1*1'
+      - 'circle.cl1*1'
+      # - 'isocelesTriangle.it1*1'
+    ref_shape: null
+    hide: []
+    alignment:
+      shapes: [[0,1],[1,2],[2,3],[3,4]]
+      anchors:
+        - ['bottom', 'bottom']
+        - ['top', 'top']
+        - ['bottom', 'top']
+        - ['cen', 'cen']
+      gaps: [90,20,20,0]
+      gaps_absolute: true
+      ref_anchors: 
+        - [null, null]
+        - [null, null]
+        - [null, null]
+        - ['top', 'bottom']
+    transformation:
+      translate: [0,0]
+    models: []
+    callbacks_upon_model_change: []
+    callbacks_upon_leftmouse_click: []
+    callbacks_upon_rightmouse_click: []
+  circle_alignment:
+    shapes: 
+      - 'circle.cl1*1'
+      - 'trapezoid.tz2*4'
+      # - 'isocelesTriangle.it1*1'
+    ref_shape: null
+    hide: []
+    alignment:
+      shapes: [[0,1],[0,2],[0,3],[0,4]]
+      anchors:
+        - ['top', 'bottom']
+        - ['left', 'bottom']
+        - ['bottom', 'bottom']
+        - ['right', 'bottom']
+      gaps: [50,50,50,50]
+      gaps_absolute: true
+      ref_anchors: 
+        - [null, null]
+        - [null, null]
+        - [null, null]
+        - [null, null]
+    transformation:
+      translate: [0,0]
+    models: []
+    callbacks_upon_model_change: []
+    callbacks_upon_leftmouse_click: []
+    callbacks_upon_rightmouse_click: []
+viewers:
+  view1:
+    composites: ['row_alignment']
+    transformation:
+      translate:
+        type: relative #or absolute
+        first_composite: [50, 320] #always in absolute value
+        values: 
+          - [200, 520] #either relative offsets in dx and dy directions or a list of absolute values for the other composite shapes.
+    connection:
+      # end<=>row_alignment.0.top<=>row_alignment.1.top<=>row_alignment.2.right<=>row_alignment.3.left:
+      row_alignment.1.top<=>row_alignment.2.top:
+        pen:
+          color: [255, 0, 0]
+          width: 1
+          ls: SolidLine
+        direct_connect: False
+        draw_after: False          
+      row_alignment.0.anchor_bottom_2<=>row_alignment.2.bottom:
+        pen:
+          color: [255, 200, 0]
+          width: 1
+          ls: SolidLine
+        direct_connect: True
+        draw_after: False   
+  view2:
+    composites: ['column_alignment']
+    transformation:
+      translate:
+        type: relative #or absolute
+        first_composite: [200, 100] #always in absolute value
+        values: 
+          - [200, 520] #either relative offsets in dx and dy directions or a list of absolute values for the other composite shapes.
+    connection:      
+      column_alignment.0.anchor_bottom_1<=>column_alignment.1.anchor_bottom_1<=>column_alignment.2.top:
+        pen:
+          color: [255, 200, 0]
+          width: 1
+          ls: SolidLine
+        direct_connect: True
+        draw_after: False                 
+      column_alignment.2.left<=>column_alignment.3.left:
+        pen:
+          color: [255, 200, 0]
+          width: 1
+          ls: SolidLine
+        direct_connect: False
+        draw_after: False                 
+      column_alignment.2.right<=>column_alignment.3.right:
+        pen:
+          color: [255, 200, 0]
+          width: 1
+          ls: SolidLine
+        direct_connect: False
+        draw_after: False                 
+  view3:
+    composites: ['circle_alignment']
+    transformation:
+      translate:
+        type: relative #or absolute
+        first_composite: [300, 300] #always in absolute value
+        values: 
+          - [200, 520] #either relative offsets in dx and dy directions or a list of absolute values for the other composite shapes.
+    connection: 
+      circle_alignment.0.anchor_0<=>circle_alignment.1.anchor_bottom_1:
+        pen:
+          color: [255, 0, 0]
+          width: 3
+          ls: SolidLine
+        direct_connect: True
+        draw_after: False                 
+      circle_alignment.0.anchor_1<=>circle_alignment.2.anchor_bottom_1:
+        pen:
+          color: [0, 200, 0]
+          width: 3
+          ls: SolidLine
+        direct_connect: True
+        draw_after: False       
+      circle_alignment.0.anchor_2<=>circle_alignment.3.anchor_bottom_1:
+        pen:
+          color: [0, 0, 250]
+          width: 3
+          ls: SolidLine
+        direct_connect: True
+        draw_after: False                 
+      circle_alignment.0.anchor_3<=>circle_alignment.4.anchor_bottom_1:
+        pen:
+          color: [255, 250, 0]
+          width: 3
+          ls: SolidLine
+        direct_connect: True
+        draw_after: False       

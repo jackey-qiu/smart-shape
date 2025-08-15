@@ -24,3 +24,5 @@ A simple view of the logic flow of smart-shape is as follows:
 ![smart-shape maingui!](.//assets//imgs//main_gui.png 'optics table')
 
 You can now choose the viewer file and the viewer objects to render viewer. You will probably need to make your own shape file in yaml format.  You should place the file into src/smart_shape/res/shape_meta_data folder to be seen by smart gui.
+
+Two example files are given. The one named viewer_model_free.yaml is shape meta info without using any communication model. The other one named viewer_model.yaml is one based on taurus and blissclient communication model. If you have no idea what are taurus and blissclient, you should try the model free viewer file. 

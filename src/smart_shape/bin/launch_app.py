@@ -5,6 +5,7 @@ from PyQt5 import QtGui
 from PyQt5.QtWidgets import QApplication
 from ..gui.main_gui import smartShapeGui
 import click
+import logging
 import pyqtgraph
 
 @click.command()
@@ -34,6 +35,8 @@ def main(config):
     myWin.setWindowTitle("SMART")
     myWin.showMaximized() 
     setattr(myWin, 'app', app)
+    #disable warning message
+    logging.getLogger('TaurusRootLogger').setLevel(logging.CRITICAL)
     myWin.show()
     sys.exit(app.exec_())
 

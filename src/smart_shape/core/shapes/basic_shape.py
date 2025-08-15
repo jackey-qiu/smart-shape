@@ -968,10 +968,10 @@ class circle(baseShape):
         p1, p2, p3, p4 = [cen + each for each in [[r, 0], [-r, 0], [0, r], [0, -r]]]
         pos_ = rotate_multiple_points(
             [(x, y)],
-            np.array(self.rot_center) + np.array(self.transformation["translate"] + self.transformation["translate_offset"]),
+            np.array(self.rot_center) + self.transformation["translate"] + self.transformation["translate_offset"],
             -self.transformation["rotate"],
         )
-        pos_ = np.array(pos_) - (np.array(self.transformation["translate"] + self.transformation["translate_offset"]))
+        pos_ = np.array(pos_) - (np.array(self.transformation["translate"]) + self.transformation["translate_offset"])
         x_, y_ = pos_
         if (p2[0] <= x_ <= p1[0]) and (p4[1] <= y_ <= p3[1]):
             return True
