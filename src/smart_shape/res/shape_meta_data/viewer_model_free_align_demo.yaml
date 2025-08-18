@@ -1,0 +1,236 @@
+softwareVersion: 0.1.0
+basic_shapes:
+  trapezoid:
+    tz1:
+      dim: [0, 0, 40, 20, 10]
+      anchor_pars: [3] 
+    tz2:
+      dim: [0, 0, 80, 40, 20]
+      anchor_pars: [3]       
+  rectangle:
+    rt1:
+      dim: [0,0,100,20]
+      anchor_pars: null
+      decoration_cursor_off:
+        pen: 
+          color: [255, 0, 0]
+          width: 0
+          ls: NoPen
+        brush: 
+          color: [250, 250, 0, 255]      
+      labels:
+        text: ['Si111']
+        anchor: ['center']
+        orientation: ['horizontal']
+        decoration: 
+          - text_color: [200,200,200]
+            font_size: 10
+            alignment: AlignCenter
+            padding: 0   
+  roundedRectangle:
+    rrt1:
+      dim: [0, 0, 150, 90, 10, 10]
+      anchor_pars: [[4,3], true, false]
+      labels:
+        text: ['pinholes']
+        anchor: ['top']
+        orientation: ['horizontal']         
+        decoration: null      
+  circle:
+    cl1:
+      dim: [0, 0, 40]
+      anchor_pars: [4]  
+      labels:
+        text: ['pitcw']
+        anchor: ['center']
+        orientation: ['horizontal']         
+        decoration: null      
+  isocelesTriangle:
+    it1:
+      dim: [0, 0, 40, 60]
+      anchor_pars: null
+      labels:
+        text: ['']
+        anchor: ['bottom']
+        orientation: ['horizontal']
+        decoration: None
+composite_shapes:
+  bottom_top:
+    shapes: 
+      - 'roundedRectangle.rrt1*1'
+      - 'isocelesTriangle.it1*1'
+      # - 'isocelesTriangle.it1*1'
+    ref_shape: null
+    hide: []
+    alignment:
+      shapes: [[0,1]]
+      anchors:
+        - ['bottom', 'top']
+      gaps: [0]
+      gaps_absolute: true
+      ref_anchors: 
+        - [null, null]
+    transformation:
+      translate: [0,0]
+    models: []
+    callbacks_upon_model_change: []
+    callbacks_upon_leftmouse_click: []
+    callbacks_upon_rightmouse_click: []
+  bottom_bottom:
+    shapes: 
+      - 'roundedRectangle.rrt1*1'
+      - 'isocelesTriangle.it1*1'
+      # - 'isocelesTriangle.it1*1'
+    ref_shape: null
+    hide: []
+    alignment:
+      shapes: [[0,1]]
+      anchors:
+        - ['bottom', 'bottom']
+      gaps: [0]
+      gaps_absolute: true
+      ref_anchors: 
+        - [null, null]
+    transformation:
+      translate: [0,0]
+    models: []
+    callbacks_upon_model_change: []
+    callbacks_upon_leftmouse_click: []
+    callbacks_upon_rightmouse_click: []
+  left_bottom:
+    shapes: 
+      - 'roundedRectangle.rrt1*1'
+      - 'isocelesTriangle.it1*1'
+      # - 'isocelesTriangle.it1*1'
+    ref_shape: null
+    hide: []
+    alignment:
+      shapes: [[0,1]]
+      anchors:
+        - ['left', 'bottom']
+      gaps: [0]
+      gaps_absolute: true
+      ref_anchors: 
+        - [null, null]
+    transformation:
+      translate: [0,0]
+    models: []
+    callbacks_upon_model_change: []
+    callbacks_upon_leftmouse_click: []
+    callbacks_upon_rightmouse_click: []
+  right_bottom:
+    shapes: 
+      - 'roundedRectangle.rrt1*1'
+      - 'isocelesTriangle.it1*1'
+      # - 'isocelesTriangle.it1*1'
+    ref_shape: null
+    hide: []
+    alignment:
+      shapes: [[0,1]]
+      anchors:
+        - ['right', 'bottom']
+      gaps: [0]
+      gaps_absolute: true
+      ref_anchors: 
+        - [null, null]
+    transformation:
+      translate: [0,0]
+    models: []
+    callbacks_upon_model_change: []
+    callbacks_upon_leftmouse_click: []
+    callbacks_upon_rightmouse_click: []
+  cen_bottom:
+    shapes: 
+      - 'roundedRectangle.rrt1*1'
+      - 'isocelesTriangle.it1*1'
+      # - 'isocelesTriangle.it1*1'
+    ref_shape: null
+    hide: []
+    alignment:
+      shapes: [[0,1]]
+      anchors:
+        - ['cen', 'bottom']
+      gaps: [0]
+      gaps_absolute: true
+      ref_anchors: 
+        - ['left', null]
+    transformation:
+      translate: [0,0]
+    models: []
+    callbacks_upon_model_change: []
+    callbacks_upon_leftmouse_click: []
+    callbacks_upon_rightmouse_click: []
+  cen_cen:
+    shapes: 
+      - 'roundedRectangle.rrt1*1'
+      - 'isocelesTriangle.it1*1'
+      # - 'isocelesTriangle.it1*1'
+    ref_shape: null
+    hide: []
+    alignment:
+      shapes: [[0,1]]
+      anchors:
+        - ['cen', 'cen']
+      gaps: [0]
+      gaps_absolute: true
+      ref_anchors: 
+        - ['top', 'top']
+    transformation:
+      translate: [0,0]
+    models: []
+    callbacks_upon_model_change: []
+    callbacks_upon_leftmouse_click: []
+    callbacks_upon_rightmouse_click: []
+viewers:
+  view1:
+    composites: ['bottom_top','bottom_bottom','left_bottom','right_bottom','cen_bottom','cen_cen']
+    transformation:
+      translate:
+        type: relative #or absolute
+        first_composite: [50, 320] #always in absolute value
+        values: 
+          - [60, 0] #either relative offsets in dx and dy directions or a list of absolute values for the other composite shapes.
+    connection:
+      # end<=>row_alignment.0.top<=>row_alignment.1.top<=>row_alignment.2.right<=>row_alignment.3.left:
+      bottom_top.1.bottom<=>bottom_bottom.1.top:
+        pen:
+          color: [255, 0, 0]
+          width: 1
+          ls: SolidLine
+        direct_connect: False
+        draw_after: False          
+      bottom_bottom.0.top<=>left_bottom.1.top:
+        pen:
+          color: [255, 100, 0]
+          width: 1
+          ls: SolidLine
+        direct_connect: False
+        draw_after: False         
+      left_bottom.0.right<=>right_bottom.0.left:
+        pen:
+          color: [255, 100, 0]
+          width: 1
+          ls: SolidLine
+        direct_connect: False
+        draw_after: False         
+      right_bottom.0.top<=>cen_bottom.1.top:
+        pen:
+          color: [255, 100, 0]
+          width: 1
+          ls: SolidLine
+        direct_connect: False
+        draw_after: True         
+      cen_bottom.0.right<=>cen_bottom.1.top:
+        pen:
+          color: [255, 100, 0]
+          width: 1
+          ls: SolidLine
+        direct_connect: True
+        draw_after: True   
+      cen_bottom.0.anchor_right_0<=>cen_cen.0.anchor_left_0:
+        pen:
+          color: [255, 100, 0]
+          width: 1
+          ls: SolidLine
+        direct_connect: True
+        draw_after: True           

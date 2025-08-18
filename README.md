@@ -26,3 +26,9 @@ A simple view of the logic flow of smart-shape is as follows:
 You can now choose the viewer file and the viewer objects to render viewer. You will probably need to make your own shape file in yaml format.  You should place the file into src/smart_shape/res/shape_meta_data folder to be seen by smart gui.
 
 Two example files are given. The one named viewer_model_free.yaml is shape meta info without using any communication model. The other one named viewer_model.yaml is one based on taurus and blissclient communication model. If you have no idea what are taurus and blissclient, you should try the model free viewer file. 
+
+# shape alignment patterns
+In yaml file, you can specify how two shapes are aligned to each other. The possible alignment anchor keys include 'top', 'bottom', 'left', 'right', 'cen' and the names of all anchor attributes. Besides alignment key, you need also reference anchor (geometry center if not specified) to make the alignment. These two parameters (alignment and reference anchor) define the vector, along which two shapes are aligned to each other. 
+See some examples here
+
+![alignment pattern!](.//assets//imgs//shape_alignments.png 'alignment patterns')
